@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фигуры</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Area shapes</h2>
+        <a href="./welcome.html">HOME</a>
+        <div class="calc-div">
+            <div class="shapes-wrapper">
+                <div class="">
+                    <div class="Circle"></div>
+                    <label>Circle radius: <br> <input type="number" id="circleRadius"></label>
+                    <button onclick="addCircle()">add circle</button>
+                </div>
+
+
+                <div class="triangle">
+                    <div class="Triangle"></div>
+                    <label>Triangle base: <br><input type="number" id="triangleBase"></label>
+                    <label>Triangle height <br><input type="number" id="triangleHeight"></label>
+                    <button onclick="addTriangle()">add triangle</button>
+                </div>
+
+
+
+                <div class="">
+                    <div class="Square"></div>
+                    <label>Square side:<br> <input type="number" id="squareSide"></label>
+                    <button onclick="addSquare()">add square</button>
+                </div>
+
+                
+
+                
+
+
+            </div>
+
+            <div id="result"></div> <!-- Новый блок для отображения результата -->
+
+
+            <div class="shapes-wrapper">
+                
+    
+                <div class="">
+                    <h2>Saved shapes</h2>
+                    <button onclick="displayShapes()">Show shapes</button>
+                    <button onclick="clearStorage()">Clear Storage</button>
+                    <ul id="shapesList"></ul>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        
+
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
